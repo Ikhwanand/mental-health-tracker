@@ -2,6 +2,8 @@ import MentalHealthIllustraction from "../assets/carousel-image.jpg";
 import { FaLock, FaChartLine, FaFileExport } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import BlurText from "../components/BlurText";
+
 
 const featureVariants = {
   initial: { opacity: 0, y: 40 },
@@ -24,13 +26,25 @@ const Main = ({ page, setPage }) => {
       <section className="flex flex-1 flex-col md:flex-row items-center justify-between px-8 py-12 md:py-20 gap-10">
         <div className="flex-1 max-w-xl">
           <h1 className="text-4xl md:text-5xl font-extrabold text-teal-800 mb-6 leading-tight">
-            Take Charge of Your{" "}
-            <span className="text-blue-500">Mental Wellness</span>
+            {/* Take Charge of Your{" "}
+            <span className="text-blue-500">Mental Wellness</span> */}
+            <BlurText
+              text="Take Charge of Your Mental Wellness"
+              delay={80}
+              animateBy="words"
+              direction="top"
+            />
           </h1>
           <p className="text-lg md:text-xl text-gray-700 mb-8">
-            Track your mood, habits, and mental health journey with ease.
+            {/* Track your mood, habits, and mental health journey with ease.
             Visualize your progress, reflect on your history, and get
-            personalized insights—all in one secure place.
+            personalized insights—all in one secure place. */}
+            <BlurText
+              text="Track your mood, habits, and mental health journey with ease. Visualize your progress, reflect on your history, and get personalized insights—all in one secure place."
+              delay={90}
+              animateBy="words"
+              direction="top"
+            />
           </p>
           <Link
             to={"/tracker"}
