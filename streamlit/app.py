@@ -194,11 +194,11 @@ def display_insights(mood_score, stress_level, sleep_hours, screen_time,
     col1, col2 = st.columns(2)
     
     with col1:
-        fig_mood = create_gauge_chart(mood_score, "Mood Score", "RdYlGn")
+        fig_mood = create_gauge_chart(mood_score, "Mood Score")
         st.plotly_chart(fig_mood, use_container_width=True)
     
     with col2:
-        fig_stress = create_gauge_chart(stress_level, "Stress Level", "RdYlGn_r")
+        fig_stress = create_gauge_chart(stress_level, "Stress Level")
         st.plotly_chart(fig_stress, use_container_width=True)
     
     # Lifestyle factors chart
